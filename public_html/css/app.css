@@ -1,0 +1,95 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/06/2018, 16:47:41
+    Author     : andersonalves
+*/
+
+.ui.left.demo.vertical.visible.inverted.sidebar.labeled.icon.menu{
+    background-color: #34483F !important;
+}
+.ui.menu .item {
+    position: initial !important;
+}
+
+.ui.inverted.vertical.segment{
+    height: 70px;
+    background-color: #34483F !important;
+}
+
+.ui.left.demo.vertical.visible.inverted.sidebar.labeled.icon.menu a:first-child{
+    margin-bottom: 30px;
+    margin-top: 4px !important;
+}
+
+i{
+    cursor: pointer;
+}
+
+.logo{
+    width: 200px;
+    height: 40px;
+    margin-left: 115px;
+    margin-top: -15px;
+}
+
+.iconsAccount{
+    margin-top: -9px;
+    text-align: right;
+}
+
+.ui.visible.left.overlay.sidebar.menuOpenAndClose {
+    -webkit-transform: translate3d(32%,0, 0) !important;
+    transform: translate3d(32%,0,0) !important;
+    background-color: #006D44 !important;
+}
+.ui.sidebar.inverted.vertical.menu.menuOpenAndClose{
+    margin-top: 70px !important;
+    background-color: #006D44 !important;
+}
+.descricaoSistema{
+    text-align: center;
+    color: white !important;
+    margin-top: 20px !important;
+    font-size: 2em;
+}
+.ui.accordion{
+    margin: 24px;
+    font-size: 19px;
+    color: white !important;
+}
+.ui.accordion .title:not(.ui) {
+    color: white !important;
+    border-bottom: 1px solid white;
+    margin-top: 6% !important;
+}
+.content p {
+    font-size: 16px;
+    cursor: pointer;
+}
+#containerToInformations{
+    margin:20px;
+    width: 45% !important;
+
+}
+#containerToInformations h1{
+    color:#006D44 !important;
+    text-align: center;
+}
+#containerToInformations h2{
+    color: rgba(0,0,0,.70) !important;
+    text-align: center;
+}
+
+#containerToInformations p{
+    font-size: 18px !important;
+}
+
+@media only screen and (max-width: 767px){
+    .ui.container {
+        width: 100% !important; 
+    }   
+}
