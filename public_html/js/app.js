@@ -16,4 +16,13 @@ $(document).ready(function () {
         $("body").removeClass("pushable");
     });
 
+    $("body").click(function () {
+        if ($(".menuOpenAndClose").hasClass("visible")) {
+            $("#containerToInformations").css("transition", "1s");
+            $("#containerToInformations").removeClass("transicaoContainer");
+        } else {
+            $("#containerToInformations").addClass("transicaoContainer");
+        }
+    });
+
 });
