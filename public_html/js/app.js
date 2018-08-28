@@ -61,10 +61,10 @@ $(document).ready(function () {
         }
     }
 
-//    $('.ui.accordion').accordion({
-//        selector: {
-//
-//        }
-//    });
+    $('.ui.accordion').accordion({
+        selector: {
+
+        }
+    });
 
 });

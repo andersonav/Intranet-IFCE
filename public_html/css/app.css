@@ -47,8 +47,9 @@ i.icon.content {
 
 .logo img {
     margin-top: -11px !important;
-    width: 82.5% !important;
+    width: 81.5% !important;
     float: right !important;
+    height: 61px;
 }
 
 .title.item {
@@ -144,12 +145,12 @@ i.icon.content {
 
 .title p {
 }
-.ui.accordion .title:not(.ui).active {
-    background: white;
-    border-left-style: solid;
+.ui.accordion .title:not(.ui).activeAccordion {
+    background: white !important;
+    border-left-style: solid !important;
     border-left-color: #34483F !important;
-    border-left-width: thick;
-    width: 96%;
+    border-left-width: thick !important;
+    width: 96% !important;
     border-bottom-right-radius: 14px !important;
     border-top-right-radius: 14px !important;
 }
