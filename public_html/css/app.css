@@ -1,79 +1,176 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 14/06/2018, 16:47:41
-    Author     : andersonalves
-*/
-
-.ui.left.demo.vertical.visible.inverted.sidebar.labeled.icon.menu{
-    background-color: #34483F !important;
+/*.openbtn{
+    margin-left: -12px !important;
+    margin-top: -20px !important;
+}*/
+i.icon.content {
+    font-size: 2em !important;
 }
+.marginlefting {
+    margin-left: 60px !important;
+}
+
+.testeMarginLefting {
+    margin-left: -26px !important;
+}
+
+.displaynone {
+    display: none !important;
+}
+
+.displayblock {
+    display: block !important;
+}
+#sibebarMaior{
+    width: 16%;
+}
+
+.sibebarToMenor {
+    width: 60px !important;
+}
+
+.sidebar .item i {
+    font-size: 24px;
+    /*margin-top: -5px !important;*/
+}
+
+.logo {
+    width: 100% !important;
+    height: 48px !important;
+    padding: 15px !important;
+}
+.logo i {
+    cursor: pointer !important;
+    color:white !important;
+    margin-left: -3px !important;
+    float: left !important;
+}
+
+.logo img {
+    margin-top: -11px !important;
+    width: 82.5% !important;
+    float: right !important;
+}
+
+.title.item {
+    padding: .92857143em 1.14285714em !important;
+    color:white !important;
+}
+
+.ui.dropdown.item.displaynone.displayblock i{
+    color:white;
+}
+
+.ui.dropdown .icon.active{
+    border-radius: 30px !important;
+    background-color: white;
+    color: #006D44 !important;
+    width: 38px !important;
+    height: 38px !important;
+    line-height: 1.5;
+    margin-left: -5px !important;
+}
+
+.ui.inverted.menu .dropdown.item:hover, .ui.inverted.menu .link.item:hover, .ui.inverted.menu a.item:hover, .ui.link.inverted.menu .item:hover {
+    background: none !important; 
+    color: #fff;
+}
+.ui.link.menu .item:hover, .ui.menu .dropdown.item:hover, .ui.menu .link.item:hover, .ui.menu a.item:hover {
+    background: none !important;
+
+}
+.ui.vertical.menu .active.item:hover {
+    background-color: white !important;
+}
+
+.dropdown .menu .header {
+    padding-top: 3.9px!important;
+    padding-bottom: 3.9px!important;
+}
+.ui.visible.left.overlay.sidebar{
+    background-color: #006D44 !important;
+}
+
+.iconsSidebarFix{
+    margin-top: 35px;
+}
+.ui.accordion a {
+    color:white !important;
+}
+.ui.accordion{
+    font-size: 15px;
+    color: white !important;
+    margin-top: 40px;
+}
+
+.ui.accordion i{
+    font-size: 23px !important;
+}
+.ui.accordion span{
+    font-size: 18px !important;
+}
+
+.ui.accordion .title:not(.ui) {
+    color: white !important;
+    text-align: justify;
+    margin-bottom: 10px !important;
+}
+.title p{
+    margin-left: 15px;
+}
+
+.textSystem{
+    font-size: 28px !important;
+}
+
 .ui.menu .item {
     position: initial !important;
 }
-
-.ui.inverted.vertical.segment{
-    height: 70px;
+.ui.menu.asd.borderless{
+    border-radius: 0!important; 
+    border: 0; 
+    -webkit-transition-duration: 0.1s !important;
     background-color: #34483F !important;
+    height: 67px;
+}
+.pusher a{
+    color:white;
+}
+.pContent.active {
+    color: #000000a6 !important;
+}
+.pContent span {
+    margin-left: 13px !important;
 }
 
-.ui.left.demo.vertical.visible.inverted.sidebar.labeled.icon.menu a:first-child{
-    margin-bottom: 30px;
-    margin-top: 4px !important;
+.title p {
 }
-
-i{
-    cursor: pointer;
+.ui.accordion .title:not(.ui).active {
+    background: white;
+    border-left-style: solid;
+    border-left-color: #34483F !important;
+    border-left-width: thick;
+    width: 96%;
+    border-bottom-right-radius: 14px !important;
+    border-top-right-radius: 14px !important;
 }
-
-.logo{
-    width: 200px;
-    height: 40px;
-    margin-left: 115px;
-    margin-top: -15px;
+.teste{
+    margin-left: 180px; 
 }
-
-.iconsAccount{
-    margin-top: -9px;
-    text-align: right;
-}
-
-.ui.visible.left.overlay.sidebar.menuOpenAndClose {
-    -webkit-transform: translate3d(32%,0, 0) !important;
-    transform: translate3d(32%,0,0) !important;
-    background-color: #006D44 !important;
-}
-.ui.sidebar.inverted.vertical.menu.menuOpenAndClose{
-    margin-top: 70px !important;
-    background-color: #006D44 !important;
-}
-.descricaoSistema{
-    text-align: center;
-    color: white !important;
-    margin-top: 20px !important;
-    font-size: 2em;
-}
-.ui.accordion{
-    margin: 24px;
-    font-size: 19px;
-    color: white !important;
-}
-.ui.accordion .title:not(.ui) {
-    color: white !important;
-    border-bottom: 1px solid white;
-    margin-top: 6% !important;
-}
-.content p {
-    font-size: 16px;
-    cursor: pointer;
-}
-#containerToInformations{
+.ui.container.containerPrincipal{
     margin:20px;
-    width: 52% !important;
-
+    z-index: 100;
+    width: 85% !important;
+    margin-left: 145px !important;
+    -webkit-transform: translate3d(2.5%,0,0) !important;
+    -moz-transform: translate3d(2.5%,0,0);
+    -o-transform: translate3d(2.5%,0,0);
+    -ms-transform: translate3d(2.5%,0,0);
+    transform: translate3d(2.5%,0,0);      
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
 }
 #containerToInformations h1{
     color:#006D44 !important;
@@ -81,20 +178,200 @@ i{
 }
 #containerToInformations h2{
     color: rgba(0,0,0,.70) !important;
-    text-align: center;
 }
 
-#containerToInformations p{
-    font-size: 18px !important;
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500 !important;
+}
+.ui.pointing.dropdown.link.item .menu .header{
+    color:white !important;
+}
+.ui.avatar.image, .ui.avatar.image img, .ui.avatar.image svg, .ui.avatar.images .image, .ui.avatar.images img, .ui.avatar.images svg{
+    width: 2.5em !important;
+    height: 2.4em !important;
 }
 
-.transicaoContainer{
-    transition: 1s;
-    transform: translate3d(30%,0,0) !important;
+#iconsAndInformationsUser {
+    margin-right: 69px !important;
+}
+.iconsAccount{
+    margin-top: 12px;
+    color:white !important;
+}
+.iconsAccount i{
+    cursor: pointer;
+    padding-right: 50px !important;
+}
+.iconsAccount .ui.simple.dropdown.link{
+    padding-right: 40px !important;
 }
 
-@media only screen and (max-width: 767px){
-    .ui.container {
-        width: 100% !important; 
-    }   
+.gb_tb{
+    border-color: transparent;
+    border-style: dashed dashed solid;
+    border-width: 0 8.5px 8.5px;
+    display: block;
+    position: absolute;
+    left: 6.5px;
+    z-index: 1;
+    height: 0;
+    width: 0;
+    -webkit-animation: gb__a .2s;
+    animation: gb__a .2s;
+    border-bottom-color: #ccc;
+    border-bottom-color: rgba(0,0,0,.2);
+    top: 36px;
+}
+.gb_sb {
+    border-color: transparent;
+    border-bottom-color: #fff;
+    border-style: dashed dashed solid;
+    border-width: 0 8.5px 8.5px;
+    display: block;
+    position: absolute;
+    left: 6.5px;
+    top: 37px;
+    z-index: 1;
+    height: 0;
+    width: 0;
+    -webkit-animation: gb__a .2s;
+    animation: gb__a .2s;
+}
+.divMae{
+    max-height: 439px;
+    height: 596px;
+    background: #fff;
+    /*border: 1px solid #ccc;*/
+    /*border-color: rgba(0,0,0,.2);*/
+    color: #000;
+    /*-webkit-box-shadow: 0 2px 10px rgba(0,0,0,.2);*/
+    box-shadow: 0px 5px 3px rgba(0,0,0,.2);
+    display: none;
+    outline: none;
+    overflow: hidden;
+    position: absolute;
+    -webkit-animation: gb__a .2s;
+    animation: gb__a .2s;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-user-select: text;
+    z-index: 99 !important;
+}
+.divMae#system{
+    right: 162px;
+    top: 56px;
+    height: auto !important;
+}
+.divMae#notifications{
+    right: 128px;
+    top: 56px;
+    width: 320px;
+    height: auto !important;
+}
+.divMae#informationsUser{
+    right: 64px;
+    top: 56px;
+    height: auto !important;
+}
+.ulGeral{
+    margin: 0 auto;
+    text-align: center; 
+    white-space: normal;
+    width: 320px;
+}
+.ulGeral#system{
+    min-height: 100px;
+    padding: 28px;
+    padding-right: 21px;
+}
+.ulNotifications{
+    white-space: normal;
+    min-height: 100px;
+    padding: 28px;
+    padding-right: 21px;
+}
+.liGeral{
+    display: inline-block;
+    vertical-align: top;
+    color: black;
+    z-index: 999;
+    height: 98px;
+    width: 86px;
+}
+.liGeral#system{
+    padding: 1px;
+}
+.liGeral#notifications{
+    padding: 1px;
+}
+.aGeral {
+    color: rgba(0,0,0,0.87) !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+.aGeral {
+    color: rgba(0,0,0,0.87) !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+.aGeral .imgSys {
+    display: inline-block;
+    vertical-align: top;
+    height: 64px;
+    width: 64px;
+}
+.iconsAccount .arrow {
+    border-color: transparent transparent #fff;
+    border-style: solid;
+    border-width: 10px;
+    display: block;
+    height: 0;
+    top: 36px;
+    position: absolute;
+    border-bottom-color: white;
+    border-style: dashed dashed solid;
+}
+
+.iconsAccount .arrow#system {
+    right: 197px;
+}
+
+.iconsAccount .arrow#notifications {
+    right: 142px;
+}
+
+.iconsAccount .arrow#informationsUser {
+    right: 80px;
+    top: 36px ;
+}
+.ui.segment.header{
+    margin-top: -.14285714em !important;
+}
+.ui.cards>.card{
+    width: 100% !important;
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Tablet / iPad Portrait */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Computer / Desktop / iPad Landscape */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Large Monitor */
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+
+}
+
+/* Widescreen Monitor */
+@media only screen and (min-width: 1920px) {
+
 }

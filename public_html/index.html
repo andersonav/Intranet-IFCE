@@ -6,123 +6,391 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Intranet</title>
+        <title>Ouvidoria IFCE</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/semantic.min.css"/>
         <link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />   
         <link rel="stylesheet" type="text/css" href="css/app.css"/>
-        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
+        <link rel="stylesheet" type="text/css" href="css/icon.min.css"/>
         <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="js/semantic.min.js" ></script>
         <script type="text/javascript" src="js/app.js" ></script>
     </head>
     <body>
         <div class="ui container fluid">
-            <!-- Sidebar -->
-            <div class="ui left demo vertical visible inverted sidebar labeled icon menu gtese">
-                <a class="item sanduiche" >
-                    <i class="bars icon" style="font-size: 2.71em !important;"></i>
-                </a>
-                <a class="item">
-                    <i class="home layout icon"></i>
-                </a>
-                <a class="item">
-                    <i class="arrow alternate circle left outline icon"></i>
-                </a>
-                <a class="item">
-                    <i class="search icon"></i>
-                </a>
-            </div>
-            <!-- Navbar -->
-            <div class="ui inverted vertical segment">
-                <div class="ui two column grid inverted secondary menu">
-                    <div class="one column"><img src="img/logo.png" class="logo"></div>
-                    <div class="one column iconsAccount">
-                        <i class="th icon big"></i>
-                        <i class="bell icon big"></i>
-                        <div class="ui inline dropdown">
-                            <img class="ui avatar image" id="imgActiveDropdown" src="img/teste.jpg">
-                            <div class="menu">
-                                <div class="header">Adjust time span</div>
-                                <div class="active item" data-text="today">Today</div>
-                                <div class="item" data-text="this week">This Week</div>
-                                <div class="item" data-text="this month">This Month</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--                    <div class="thirteen wide column">
-                                            <img src="img/logo.png" class="logo">
-                                        </div>
-                                        <div class="three wide column iconsAccount">
-                                            <i class="th icon big"></i>
-                                            &nbsp;&nbsp;
-                                            <i class="bell icon big"></i>
-                                            &nbsp;&nbsp;
-                                            <div class="ui inline dropdown">
-                                                <img class="ui avatar image" id="imgActiveDropdown" src="img/teste.jpg">
-                                                <div class="menu">
-                                                    <div class="header">Adjust time span</div>
-                                                    <div class="active item" data-text="today">Today</div>
-                                                    <div class="item" data-text="this week">This Week</div>
-                                                    <div class="item" data-text="this month">This Month</div>
-                                                </div>
-                                            </div>
-                                        </div>-->
+            <div class="ui sidebar vertical left menu overlay visible" style="-webkit-transition-duration: 0.1s; overflow: visible !important;" id="sibebarMaior">
+                <div class="item logo">
+                    <i class="openbtn icon content"></i>
+                    <img src="img/Logo ouvidoria - branca.png" />
                 </div>
-            </div>
-
-            <div class="ui sidebar inverted vertical menu overlay menuOpenAndClose">
-                <h2 class="ui header descricaoSistema">Docs e Forms</h2>
                 <div class="ui accordion">
                     <div class="title">
-                        <i class="dropdown icon"></i>
-                        Formulários
-                    </div>
-                    <div class="content">
-                        <p class="transition hidden"><a class="item">Cartão de acesso</a></p>
+                        <p class="pContent"><i class="home layout icon"></i>&nbsp;&nbsp;&nbsp;<span>Página Inicial</span></p>
                     </div>
                     <div class="title">
-                        <i class="dropdown icon"></i>
-                        Políticas
+                        <p class="pContent"><i class="arrow alternate circle left outline icon"></i>&nbsp;&nbsp;&nbsp;<span>Voltar</span></p>
                     </div>
-                    <div class="content">
-                        <p class="transition hidden"><a class="item">Cartão de acesso</a></p>
-                        <p class="transition hidden"><a class="item">Segurança da informação</a></p>
-                    </div>  
+                    <div class="title active">
+                        <p class="pContent active"><i class="bullhorn icon active"></i>&nbsp;<span>Abrir Manifestação</span></p>
+                    </div>
                     <div class="title">
-                        <i class="dropdown icon"></i>
-                        Fluxogramas
+                        <p class="pContent"><i class="search icon"></i>&nbsp;&nbsp;&nbsp;<span>Buscar Manifestação</span></p>
+                    </div>
+                    <div class="title">
+                        <p class="pContent"><i class="chart area icon"></i>&nbsp;&nbsp;&nbsp;<span>Estatísticas</span></p>
+                    </div>
+                    <div class="title">
+                        <p class="pContent"><i class="question icon"></i>&nbsp;&nbsp;&nbsp;<span>Perguntas Frequentes</span></p>
+                    </div>
+                    <div class="title">
+                        <p class="pContent"><i class="info icon"></i>&nbsp;&nbsp;&nbsp;<span>Outros Contatos</span></p>
+                    </div>
+<!--                    <a class="title item">Dashboard  <i class="dropdown icon"></i></a>
+                    <div class="content">
+                        <a class="item" href="dashboard.html">Dashboard</a>
+                    </div>
+                    <a class="item active">
+                       <p class="pContent active"><i class="bullhorn icon active"></i>&nbsp;&nbsp;&nbsp;<span>Abrir Manifestação</span></p>
+                    </a>
+                    <div class="title item">
+                         <i class="dropdown icon"></i> Teste
                     </div>
                     <div class="content">
-                        <p class="transition hidden"><a class="item">Teste</a></p>
-                        <p class="transition hidden"><a class="item">Teste</a></p>
+                        <a class="item" href="inbox.html">Inbox</a>
+                        <a class="item" href="mail.html">Mailbox</a>
+                        <a class="item" href="chat.html">Chat</a>
+                    </div>
+                    <div class="title item">
+                        <i class="dropdown icon"></i> Layouts
+                    </div>
+                    <div class="content">
+                        <a class="item" href="sidebar.html">Sidebar</a>
+                        <a class="item" href="menu.html">Nav</a>
+                        <a class="item" href="animatedicon.html">Animated Icon</a>
+                        <a class="item" href="box.html">Box</a>
+                        <a class="item" href="cards.html">Cards</a>
+                    </div>
+                    <a class="item">
+                        <b>Components</b>
+                    </a>
+                    <div class="title item">
+                        <i class="dropdown icon"></i> UI-Kit
+                    </div>
+                    <div class="content">
+                        <a class="item" href="accordion.html">Accordion</a>
+                        <a class="item" href="breadcrumb.html">Breadcrumb</a>
+                        <a class="item" href="button.html">Button</a>
+                        <a class="item" href="divider.html">Divider</a>
+                    </div>
+
+                    <div class="title item">
+                        <i class="dropdown icon"></i> Pages
+                    </div>
+                    <div class="content">
+                        <a class="item" href="profile.html">Profile</a>
+                        <a class="item" href="settings.html">Settings</a>
+                        <a class="item" href="blank.html">Blank</a>
+                    </div>
+                    <div class="title item">
+                        <i class="dropdown icon"></i> Form
+                    </div>
+                    <div class="content">
+                        <a class="item" href="formelements.html">Form Element</a>
+                        <a class="item" href="input.html">Input</a>
+                        <a class="item" href="formvalidation.html">Form Validation</a>
+                        <a class="item" href="editor.html">Html Editor</a>
+                    </div>
+                    <div class="title item">
+                        <i class="dropdown icon"></i> Tables
+                    </div>
+                    <div class="content">
+                        <a class="item" href="table.html">Static Table
+                        </a>
+                        <a class="item" href="datatable.html">Datatable
+                        </a>
+                        <a class="item" href="editable.html">Editable
+                        </a>
+                    </div>
+                    <div class="title item">
+                        <i class="dropdown icon"></i> Chart
+                    </div>
+                    <div class="content">
+                        <a class="item" href="chart.html">Charts 1
+                        </a>
+                        <a class="item" href="chart-2.html">Charts 2
+                        </a>
+                        <a class="item" href="chart-3.html">Charts 3
+                        </a>
+                    </div>-->
+                </div>
+                <div class="iconsSidebarFix">
+                    <div class="ui dropdown item displaynone iconShort">
+                        <i class="home layout icon"></i>
+                    </div>
+                    <div class="ui dropdown item displaynone iconShort">
+                        <i class="arrow alternate circle left outline icon"></i>
+                    </div>
+                    <div class="ui dropdown item displaynone iconShort">
+                        <i class="bullhorn icon active"></i>
+                    </div>
+                    <div class="ui dropdown item displaynone iconShort">
+                        <i class="search icon"></i>
+                    </div>
+                    <div class="ui dropdown item displaynone iconShort">
+                        <i class="chart area icon"></i>
+                    </div>
+                    <div class="ui dropdown item displaynone iconShort">
+                        <i class="question icon"></i>
+                    </div>
+                    <div class="ui dropdown item displaynone iconShort">
+                        <i class="info icon"></i>
+                    </div>
+                </div>
+                <!--                <div class="ui dropdown item displaynone">
+                                    <i class="icon demo-icon heart icon-heart active"></i>
+                                </div>
+                                <div class="ui dropdown item displaynone">
+                                    <i class="icon demo-icon world icon-globe"></i>
+                                </div>
+                                <div class="ui dropdown item displaynone">
+                                    <z>Pages</z>
+                                    <i class="icon demo-icon  icon-params alarm"></i>
+                                    
+                                                        <div class="menu">
+                                                            <div class="header">
+                                                                Layouts
+                                                            </div>
+                                                            <div class="ui divider"></div>
+                                                            <a class="item" href="sidebar.html">Sidebar
+                                                            </a>
+                                                            <a class="item" href="menu.html">Nav
+                                                            </a>
+                                                            <a class="item" href="animatedicon.html">Animated Icon
+                                                            </a>
+                                                        </div>
+                                </div>-->
+            </div>
+            <div class="pusher">
+                <div class="ui menu asd borderless">
+                    <!--                    <a class="item openbtn">
+                                            <i class="icon content"></i>
+                                        </a>-->
+                    <!--<a class="item">Link caso teste-->
+
+                    <div class="right menu" id="iconsAndInformationsUser">
+                        <div class="iconsAccount">
+                            <!--<img src="img/th.png">-->
+                            <i class="th icon big openDivNone" id="system"></i>
+                            <div class="arrow displaynone" id="system"></div>
+                            <div class="divMae" id="system">
+                                <ul class="ulGeral" id="system">
+                                    <li class="liGeral" id="system">
+                                        <a class="aGeral" id="system">
+                                            <img src="img/logo_sysreserva.png" class="imgSys">
+                                            <span>SysReserva</span>
+                                        </a>
+                                    </li>
+                                    <li class="liGeral">
+                                        <a class="aGeral" id="system">
+                                            <img src="img/logo_sysreserva.png" class="imgSys">
+                                            <span>SysReserva</span>
+                                        </a>
+                                    </li>
+                                    <li class="liGeral">
+                                        <a class="aGeral" id="system">
+                                            <img src="img/logo_sysreserva.png" class="imgSys">
+                                            <span>SysReserva</span>
+                                        </a>
+                                    </li>
+                                    <li class="liGeral">
+                                        <a class="aGeral"id="system">
+                                            <img src="img/logo_sysreserva.png" class="imgSys">
+                                            <span>SysReserva</span>
+                                        </a>
+                                    </li>
+                                    <li class="liGeral">
+                                        <a class="aGeral" id="system">
+                                            <img src="img/logo_sysreserva.png" class="imgSys">
+                                            <span>SysReserva</span>
+                                        </a>
+                                    </li>
+                                    <li class="liGeral">
+                                        <a class="aGeral" id="system">
+                                            <img src="img/logo_sysreserva.png" class="imgSys">
+                                            <span>SysReserva</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <i class="bell icon big openDivNone" id="notifications"></i>
+                            <div class="arrow displaynone" id="notifications"></div>
+                            <div class="divMae" id="notifications">
+                                <!--<div class="gb_tb"></div>-->
+                                <!--<div class="gb_sb"></div>-->
+                                <ul class="ulNotifications">
+                                    <div class="ui items">
+                                        <div class="item">
+                                            <a class="ui tiny image">
+                                                <img src="/images/avatar/large/stevie.jpg">
+                                            </a>
+                                            <div class="content">
+                                                <a class="header">Stevie Feliciano</a>
+                                                <div class="description">
+                                                    <p>Stevie Feliciano is a <a>library scientist</a> living in New York City. She likes to spend her time reading, running, and writing.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a class="ui tiny image">
+                                                <img src="/images/avatar/large/veronika.jpg">
+                                            </a>
+                                            <div class="content">
+                                                <a class="header">Veronika Ossi</a>
+                                                <div class="description">
+                                                    <p>Veronika Ossi is a set designer living in New York who <a>enjoys</a> kittens, music, and partying.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <a class="ui tiny image">
+                                                <img src="/images/avatar/large/jenny.jpg">
+                                            </a>
+                                            <div class="content">
+                                                <a class="header">Jenny Hess</a>
+                                                <div class="description">
+                                                    <p>Jenny is a student studying Media Management at <a>the New School</a>.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                            <img class="ui avatar image openDivNone" id="informationsUser" src="img/teste.jpg" style="cursor: pointer;">
+                            <!--                            <div class="ui simple dropdown link">
+                                                            
+                                                            <div class="ui menu">
+                                                                <div class="header">Adjust time span</div>
+                                                                <div class="active item" data-text="today">Today</div>
+                                                                <div class="item" data-text="this week">This Week</div>
+                                                                <div class="item" data-text="this month">This Month</div>
+                                                            </div>
+                                                        </div>-->
+                            <div class="arrow displaynone" id="informationsUser"></div>
+                            <div class="divMae" id="informationsUser">
+                                <!--<div class="gb_tb"></div>-->
+                                <!--<div class="gb_sb"></div>-->
+                                <div class="ui cards">
+                                    <div class="card">
+                                        <div class="content">
+                                            <div class="header">
+                                                Seja Bem Vindo, Anderson
+                                            </div>
+                                            <div class="meta">
+                                                Administrador
+                                            </div>
+                                            <div class="description">
+                                                Último acesso: 15/03/2018 10:50:23 <br/>Sessão: 05:31
+                                            </div>
+                                        </div>
+                                        <div class="extra content">
+                                            <div class="ui two buttons">
+                                                <div class="ui button">Conta</div>
+                                                <div class="ui red button">Sair</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--                        <div class="ui dropdown item">
+                                                    Bem Vindo <i class="dropdown icon"></i>
+                                                    <div class="menu">
+                                                        <a class="item">Conta</a>
+                                                        <a class="item">Dados</a>
+                                                        <a class="item">Administrador</a>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="ui primary button">Testee</div>
+                                                </div>-->
+                    </div>
+
+                </div>
+
+                <div class="teste">
+                    <div class="ui container containerPrincipal" id="containerToInformations" style="">
+                        <h1 class="textoTopoOuvidoria"><i class="bullhorn icon"></i>&nbsp;&nbsp;Abrir manifestação</h1>
+                        <div class="ui divider"></div>
+                        <div class="ui segment">
+                            <form class="ui form">
+                                <h4 class="ui header">Envie sua manifestação pelo formulário abaixo, os campos com asteriscos são obrigatórios</h4>
+                                <h2 class="ui dividing header">Sua identidade</h2>
+                                <div class="ui segment">
+                                    <div class="ui grid">
+                                        <div class="sixteen wide column">
+                                            <div class="ui toggle checkbox">
+                                                <input type="checkbox" name="gift" tabindex="0" class="hidden">
+                                                <label>Desejo me identificar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="ui dividing header">Tipo de Manifestação</h2>
+                                <div class="two fields">
+                                    <div class="required field">
+                                        <label>Tipo</label>
+                                        <select class="ui fluid dropdown">
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="1">Elogiar</option>
+                                            <option value="2">Sugerir</option>
+                                            <option value="3">Reclamar</option>
+                                        </select>
+                                    </div>
+                                    <div class="required field">
+                                        <label>Assunto</label>
+                                        <input type="text" name="assunto" placeholder="Assunto">
+                                    </div>
+                                </div>
+                                <h2 class="ui dividing header">Dados Pessoais</h2>
+                                <div class="two fields">
+                                    <div class="required field">
+                                        <label>Identificação</label>
+                                        <input type="text" name="identificacao" placeholder="Digite sua identificação">
+                                    </div>
+                                    <div class="field">
+                                        <label>Nome</label>
+                                        <input type="text" name="nome" readonly placeholder="Nome" tabindex="-1">
+                                    </div>
+                                </div>
+                                <div class="two fields">
+                                    <div class="field">
+                                        <label>Setor/Curso</label>
+                                        <input type="text" name="email" readonly placeholder="Setor/Curso" tabindex="-1">
+                                    </div>
+                                    <div class="field">
+                                        <label>Email</label>
+                                        <input type="text" name="email" readonly placeholder="Email" tabindex="-1">
+                                    </div>
+                                </div>
+                                <h2 class="ui dividing header">Mensagem</h2>
+                                <div class="field">
+                                    <label>Descrição</label>
+                                    <textarea></textarea>
+                                </div>
+                                <div class="field" id="botoes">
+                                    <button class="positive ui button" id="btnEnviar">
+                                        Enviar
+                                    </button>
+                                    <button class="ui red button" id="btnLimparDescricao">
+                                        Limpar Descrição
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="ui container" id="containerToInformations">
-                <h1 class="ui header">Normas de Uso do Cartão de Acesso ao Campus e R.A</h1>
-                <div class="ui divider"></div>
-                <h2 class="ui header">Cartões recarregáveis para acesso ao campus e Refeitórios Acadêmico estão disponíveis para todas as pessoas que apresentam algum vínculo institucional
-                    , ou seja, estudantes dos cursos presenciais de graduação, técnico-administrativos, professores e tercerizados do IFCE.</h2>
-                <p class="ui header" id="normasDeUso"><b>NORMAS DE USO</b></p>
-                <p><i class="arrow right icon"></i>O recebimento de um cartão recarregável para acesso ao campus e Refeitório Acadêmico está condicionado a prévio cadastramento
-                    por parte do usuário.</p>
-                <p><i class="arrow right icon"></i>Um cartão será entregue, gratuitamente (primeira via), a todos aqueles que apresentarem um documento comprobatório do seu vínculo
-                    e estiverem na ativa.</p>
-                <p><i class="arrow right icon"></i>Os estudantes devem estar devidamente matriculados e cursando disciplinas.</p>
-                <p><i class="arrow right icon"></i>O cartão é para uso exclusivo do usuário cadastrado. Em caso de uso por terceiros, o cartão poderá ser apreendido
-                    e o usuário deverá responder pelo fato.</p>
-                <p><i class="arrow right icon"></i>No caso de esquecimento do cartão, o usuário deve se dirigir ao guichê de atendimento do Refeitório e explicar a situação.
-                    Após a identificação, o usuário deverá adquirir um ticket.</p>
-                <p><i class="arrow right icon"></i>O cartão poderá ser carregado com até cinquenta refeições.</p>
-                <p><i class="arrow right icon"></i>A cada dia será permitido apenas um acesso do usuário por cada refeição.</p>
-                <p><i class="arrow right icon"></i>Para os casos de perda, furto, roubo ou extravio do cartão, o usuário deve comunicar imediatamente o fato ao setor de informática, para cancelamento imediato.</p>
-                <p><i class="arrow right icon"></i>Em caso de perda ou extravio, para aquisição de segunda via será cobrada uma taxa de R$ 8,00 (oito reais), a ser paga no restaurante acadêmico.</p>
-            </div>
-
         </div>
-
     </body>
 </html>
