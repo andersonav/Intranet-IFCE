@@ -365,11 +365,46 @@ i.icon.content {
 /* Computer / Desktop / iPad Landscape */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
+
 }
 
 /* Large Monitor */
 @media only screen and (min-width: 1200px) and (max-width: 1919px) {
+    #sibebarMaior{
+        width: 22%;
+    }
+    #iconsAndInformationsUser {
+        margin-right: 27px !important;
+    }
+    .teste {
+        margin-left: 153px;
+    }
+    .ui.container.containerPrincipal{
+        width: 82.5% !important;
+    }
+    .divMae#informationsUser {
+        right: 28px;
+    }
+    .iconsAccount .arrow#informationsUser {
+        right: 37px;
 
+    }
+
+    .divMae#notifications{
+        right: 27px;
+    }
+
+    .iconsAccount .arrow#notifications {
+        right: 99px;
+    }
+
+    .divMae#system {
+        right: 27px;
+    }
+
+    .iconsAccount .arrow#system {
+        right: 154px;
+    }
 }
 
 /* Widescreen Monitor */
