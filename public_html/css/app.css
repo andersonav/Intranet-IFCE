@@ -107,7 +107,7 @@ i.icon.content {
     font-size: 23px !important;
 }
 .ui.accordion span{
-    font-size: 18px !important;
+    font-size: 17px !important;
 }
 
 .ui.accordion .title:not(.ui) {
@@ -353,34 +353,86 @@ i.icon.content {
     width: 100% !important;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 175px) and (max-width: 991px) {
 
+}
+
+@media only screen and (max-width: 767px) {
+    .ui.container{
+        margin-left: auto important; 
+        margin-right: auto !important; 
+    }
+    .teste{
+        margin-left: 0px; 
+    }
+    .ui.container.containerPrincipal{
+        margin:20px;
+        z-index: 100;
+        width: 85% !important;
+        margin-left: 0px !important;
+    }
+    #iconsAndInformationsUser {
+        margin-right: 18px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 910px) {
+    #sibebarMaior{
+        width: 28%
+    }
+    .ui.container{
+        margin-left: auto important; 
+        margin-right: auto !important; 
+    }
+    .teste {
+        margin-left: 166px;
+    }
+    .ui.container.containerPrincipal{
+        width: 82.5% !important;
+        margin-left: 96px !important;
+    }
+
+    #iconsAndInformationsUser {
+        margin-right: 18px !important;
+    }
 }
 
 /* Tablet / iPad Portrait */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 909px) and (max-width: 991px) {
+    #sibebarMaior{
+        width: 27%
+    }
+    .ui.container{
+        margin-left: auto important; 
+        margin-right: auto !important; 
+    }
+    .teste {
+        margin-left: 166px;
+    }
+    .ui.container.containerPrincipal{
+        width: 82.5% !important;
+        margin-left: 96px !important;
+    }
 
+    #iconsAndInformationsUser {
+        margin-right: 18px !important;
+    }
 }
 
 /* Computer / Desktop / iPad Landscape */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-
-
-}
-
-/* Large Monitor */
-@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+@media only screen and (min-width: 992px) and (max-width: 1329px) {
     #sibebarMaior{
-        width: 22%;
+        width: 26%;
     }
     #iconsAndInformationsUser {
         margin-right: 27px !important;
     }
     .teste {
-        margin-left: 153px;
+        margin-left: 246px;
     }
     .ui.container.containerPrincipal{
         width: 82.5% !important;
+        margin-left: 96px !important;
     }
     .divMae#informationsUser {
         right: 28px;
@@ -404,6 +456,36 @@ i.icon.content {
 
     .iconsAccount .arrow#system {
         right: 154px;
+    }
+
+    .ui.container{
+        margin-left: auto important; 
+        margin-right: auto !important; 
+    }
+
+}
+
+/* Large Monitor */
+@media only screen and (min-width: 1329px) and (max-width: 1523px) {
+    #sibebarMaior{
+        width: 20%;
+    }
+
+    .ui.container.containerPrincipal{
+        width: 82.5% !important;
+    }
+
+    .teste {
+        margin-left: 153px;
+    }
+
+    #iconsAndInformationsUser {
+        margin-right: 27px !important;
+    }
+
+    .ui.container{
+        margin-left: auto important; 
+        margin-right: auto !important; 
     }
 }
 
