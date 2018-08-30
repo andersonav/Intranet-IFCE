@@ -13,6 +13,10 @@ i.icon.content {
     margin-left: -26px !important;
 }
 
+.marginLeftingResolutionMenor{
+    margin-left: 14% !important;
+}
+
 .displaynone {
     display: none !important;
 }
@@ -193,9 +197,19 @@ i.icon.content {
     height: 2.4em !important;
 }
 
+#leftMenuToMobile{
+    display: none;
+}
+
 #iconsAndInformationsUser {
     margin-right: 69px !important;
 }
+
+.iconSibebar{
+    margin-top: 20px;
+    color:white !important;
+}
+
 .iconsAccount{
     margin-top: 12px;
     color:white !important;
@@ -353,22 +367,75 @@ i.icon.content {
     width: 100% !important;
 }
 
-@media only screen and (min-width: 175px) and (max-width: 991px) {
+@media only screen and (min-width: 175px) and (max-width: 549px) {
+    .ui.container.fluid{
+        margin-left: auto !important; 
+        margin-right: auto !important; 
+    }
 
+    #leftMenuToMobile{
+        display: block;
+        margin-left: 3%;
+    }
+
+    #iconsAndInformationsUser {
+        margin-right: 18px !important;
+    }
+
+    .teste{
+        margin-left: 0;
+    }
+    .ui.container.containerPrincipal{
+        margin-left: 6% !important;
+    }
 }
 
-@media only screen and (max-width: 767px) {
-    .ui.container{
-        margin-left: auto important; 
+@media only screen and (min-width: 550px) and (max-width: 717px) {
+    #sibebarMaior{
+        width: 40%;
+    }
+    .ui.container.fluid{
+        margin-left: auto !important; 
         margin-right: auto !important; 
     }
     .teste{
-        margin-left: 0px; 
+        margin-left: 42%;
     }
     .ui.container.containerPrincipal{
         margin:20px;
         z-index: 100;
-        width: 85% !important;
+        width: 94% !important;
+        margin-left: 0px !important;
+    }
+    #iconsAndInformationsUser {
+        margin-right: 18px !important;
+    }
+    .ui.accordion i {
+        font-size: 17px !important;
+    }
+    .ui.accordion span {
+        font-size: 16px !important;
+    }
+    .title p {
+        margin-left: 18px;
+    }
+}
+
+@media only screen and (min-width: 718px) and (max-width: 849px) {
+    #sibebarMaior{
+        width: 34%;
+    }
+    .ui.container.fluid{
+        margin-left: auto !important; 
+        margin-right: auto !important; 
+    }
+    .teste{
+        margin-left: 37%;
+    }
+    .ui.container.containerPrincipal{
+        margin:20px;
+        z-index: 100;
+        width: 90% !important;
         margin-left: 0px !important;
     }
     #iconsAndInformationsUser {
@@ -376,11 +443,11 @@ i.icon.content {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 910px) {
+@media only screen and (min-width: 850px) and (max-width: 910px) {
     #sibebarMaior{
-        width: 28%
+        width: 28%;
     }
-    .ui.container{
+    .ui.container.fluid{
         margin-left: auto important; 
         margin-right: auto !important; 
     }
@@ -400,10 +467,10 @@ i.icon.content {
 /* Tablet / iPad Portrait */
 @media only screen and (min-width: 909px) and (max-width: 991px) {
     #sibebarMaior{
-        width: 27%
+        width: 27%;
     }
-    .ui.container{
-        margin-left: auto important; 
+    .ui.container.fluid{
+        margin-left: auto !important; 
         margin-right: auto !important; 
     }
     .teste {
@@ -458,8 +525,8 @@ i.icon.content {
         right: 154px;
     }
 
-    .ui.container{
-        margin-left: auto important; 
+    .ui.container.fluid{
+        margin-left: auto !important; 
         margin-right: auto !important; 
     }
 
@@ -483,8 +550,8 @@ i.icon.content {
         margin-right: 27px !important;
     }
 
-    .ui.container{
-        margin-left: auto important; 
+    .ui.container.fluid{
+        margin-left: auto !important; 
         margin-right: auto !important; 
     }
 }

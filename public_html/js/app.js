@@ -11,17 +11,33 @@ $(document).ready(function () {
     $('.checkbox').checkbox();
     $('select').dropdown();
 
+    if ($(window).width() >= 200 && $(window).width() <= 549) {
+        $("#sibebarMaior").removeClass("visible");
+    }
+
     $(".openbtn").on("click", function () {
         $(".ui.sidebar").toggleClass("very thin icon");
         $(".asd").toggleClass("marginlefting");
         $(".sidebar z").toggleClass("displaynone");
         $(".ui.accordion").toggleClass("displaynone");
         $(".ui.dropdown.item.iconShort").toggleClass("displayblock");
-        $(".teste").toggleClass("testeMarginLefting");
+        var aux = "";
+        if ($(window).width() >= 550 && $(window).width() <= 849) {
+            aux = "marginLeftingResolutionMenor";
+            // is mobile device
+        } else {
+            aux = "testeMarginLefting";
+        }
+        $(".teste").toggleClass(aux);
         $("#sibebarMaior").toggleClass("sibebarToMenor");
         $(".logo").find('img').toggle();
 
     });
+
+    $("#iconSidebarMobile").click(function () {
+        $("#sibebarMaior").addClass("visible");
+    });
+
     $(".openDivNone").click(function () {
         var valorId = $(this).attr("id");
         $(".divMae").each(function () {
