@@ -272,22 +272,20 @@ i.icon.content {
     border-radius: 2px;
     -webkit-user-select: text;
     z-index: 99 !important;
+    height: auto !important;
+    top: 56px;
 }
 .divMae#system{
     right: 162px;
-    top: 56px;
-    height: auto !important;
+
 }
 .divMae#notifications{
     right: 128px;
-    top: 56px;
     width: 320px;
-    height: auto !important;
+
 }
 .divMae#informationsUser{
     right: 64px;
-    top: 56px;
-    height: auto !important;
 }
 .ulGeral{
     margin: 0 auto;
@@ -358,13 +356,36 @@ i.icon.content {
 
 .iconsAccount .arrow#informationsUser {
     right: 80px;
-    top: 36px ;
+    top: 36px;
 }
 .ui.segment.header{
     margin-top: -.14285714em !important;
 }
 .ui.cards>.card{
     width: 100% !important;
+}
+@media only screen and (min-width: 500px) and (max-width: 549px) {
+    #sibebarMaior{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 499px) {
+    #sibebarMaior{
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 449px) {
+    #sibebarMaior{
+        width: 68%;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 349px) {
+    #sibebarMaior{
+        width: 80%;
+    }
 }
 
 @media only screen and (min-width: 175px) and (max-width: 549px) {
@@ -419,6 +440,28 @@ i.icon.content {
     .title p {
         margin-left: 18px;
     }
+    .divMae#system{
+        right: 18px;
+    }
+    .divMae#notifications{
+        right: 18px;
+    }
+    .divMae#informationsUser{
+        right: 18px;
+    }
+
+    .iconsAccount .arrow#system {
+        right: 145px;
+    }
+
+    .iconsAccount .arrow#notifications {
+        right: 91px;
+    }
+
+    .iconsAccount .arrow#informationsUser {
+        right: 29px;
+        top: 36px;
+    }
 }
 
 @media only screen and (min-width: 718px) and (max-width: 849px) {
@@ -440,6 +483,28 @@ i.icon.content {
     }
     #iconsAndInformationsUser {
         margin-right: 18px !important;
+    }
+    .divMae#system{
+        right: 18px;
+    }
+    .divMae#notifications{
+        right: 18px;
+    }
+    .divMae#informationsUser{
+        right: 18px;
+    }
+
+    .iconsAccount .arrow#system {
+        right: 145px;
+    }
+
+    .iconsAccount .arrow#notifications {
+        right: 91px;
+    }
+
+    .iconsAccount .arrow#informationsUser {
+        right: 29px;
+        top: 36px;
     }
 }
 
