@@ -409,6 +409,28 @@ i.icon.content {
     .ui.container.containerPrincipal{
         margin-left: 6% !important;
     }
+    .divMae#system{
+        right: 18px;
+    }
+    .divMae#notifications{
+        right: 18px;
+    }
+    .divMae#informationsUser{
+        right: 18px;
+    }
+
+    .iconsAccount .arrow#system {
+        right: 145px;
+    }
+
+    .iconsAccount .arrow#notifications {
+        right: 91px;
+    }
+
+    .iconsAccount .arrow#informationsUser {
+        right: 29px;
+        top: 36px;
+    }
 }
 
 @media only screen and (min-width: 550px) and (max-width: 717px) {

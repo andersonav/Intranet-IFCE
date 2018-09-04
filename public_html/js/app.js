@@ -5,17 +5,25 @@
  */
 
 $(document).ready(function () {
-    var aux = "";
     var indiceId = {"system": 0, "notifications": 0, "informationsUser": 0};
     $('.menu .item').tab();
     $('.checkbox').checkbox();
     $('select').dropdown();
 
+    $(window).resize(function () {
+
+        if ($(window).width() >= 200 && $(window).width() <= 549) {
+
+        } else {
+            $("#sibebarMaior").addClass("visible");
+        }
+    });
+
     if ($(window).width() >= 200 && $(window).width() <= 549) {
         $("#sibebarMaior").removeClass("visible");
         $("#iconSidebarMobile").click(function () {
             $("#sibebarMaior").addClass("visible");
-            var aux = auxWidthScreen();
+            var aux = auxWidthScreenSidebar();
             $("#sibebarMaior").css("width", aux + "%");
             $("#sibebarMaior").css("display", "block");
             $(".openbtn").addClass("closeMobile");
@@ -87,8 +95,14 @@ $(document).ready(function () {
         var aux = "";
         if ($(window).width() >= 550 && $(window).width() <= 849) {
             aux = "marginLeftingResolutionMenor";
-            // is mobile device
-        } else if ($(window).width() >= 500 && $(window).width() <= 549) {
+        } else {
+            aux = "testeMarginLefting";
+        }
+        return aux;
+    }
+
+    function auxWidthScreenSidebar() {
+        if ($(window).width() >= 500 && $(window).width() <= 549) {
             aux = "50";
         } else if ($(window).width() >= 450 && $(window).width() <= 499) {
             aux = "55";
@@ -96,18 +110,26 @@ $(document).ready(function () {
             aux = "68";
         } else if ($(window).width() >= 200 && $(window).width() <= 349) {
             aux = "80";
-        } else {
-            aux = "testeMarginLefting";
         }
-        return aux;
     }
-    
-    
+
+
+
 
     $('.ui.accordion').accordion({
         selector: {
 
         }
+    });
+
+    $(".ui.accordion .title").click(function () {
+        var valorId = $(this).attr("id");
+        $(this).each(function () {
+            $(this).removeClass("active");
+            $(this).removeClass("activeAccordion");
+        });
+        console.log(valorId);
+        $(".title#" + valorId).addClass("activeAccordion");
     });
 
 });
