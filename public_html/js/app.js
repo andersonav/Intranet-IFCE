@@ -124,11 +124,10 @@ $(document).ready(function () {
 
     $(".ui.accordion .title").click(function () {
         var valorId = $(this).attr("id");
-        $(this).each(function () {
+        $(".ui.accordion .title").each(function () {
             $(this).removeClass("active");
             $(this).removeClass("activeAccordion");
         });
-        console.log(valorId);
         $(".title#" + valorId).addClass("activeAccordion");
     });
 

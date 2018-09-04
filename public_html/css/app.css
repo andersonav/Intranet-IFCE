@@ -140,9 +140,6 @@ i.icon.content {
 .pusher a{
     color:white;
 }
-.pContent.active {
-    color: #000000a6 !important;
-}
 .pContent span {
     margin-left: 13px !important;
 }
@@ -157,6 +154,7 @@ i.icon.content {
     width: 96% !important;
     border-bottom-right-radius: 14px !important;
     border-top-right-radius: 14px !important;
+    color: #000000a6 !important;
 }
 .teste{
     margin-left: 180px; 
