@@ -262,7 +262,6 @@ i.icon.content {
     box-shadow: 0px 5px 3px rgba(0,0,0,.2);
     display: none;
     outline: none;
-    overflow: hidden;
     position: absolute;
     -webkit-animation: gb__a .2s;
     animation: gb__a .2s;

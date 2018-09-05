@@ -29,26 +29,16 @@ and open the template in the editor.
                     <div class="title" id="paginaInicial">
                         <p class="pContent"><i class="home layout icon"></i>&nbsp;&nbsp;&nbsp;<span>Página Inicial</span></p>
                     </div>
-                    <div class="content">
-                        <a class="item" href="inbox.html">Teste</a>
-                        <a class="item" href="mail.html">Teste</a>
-                        <a class="item" href="chat.html">Teste</a>
-                    </div>
                     <div class="title" id="voltar">
                         <p class="pContent"><i class="arrow alternate circle left outline icon"></i>&nbsp;&nbsp;&nbsp;<span>Voltar</span></p>
                     </div>
-                    <div class="content">
-                        <a class="item" href="inbox.html">Teste</a>
-                        <a class="item" href="mail.html">Teste</a>
-                        <a class="item" href="chat.html">Teste</a>
+                    <div class="title" id="abrirManifestacao">
+                        <p class="pContent"><i class="bullhorn icon active"></i>&nbsp;<span>Abrir Manifestação</span></p>
                     </div>
-                    <div class="title activeAccordion" id="abrirManifestacao">
-                        <p class="pContent active"><i class="bullhorn icon active"></i>&nbsp;<span>Abrir Manifestação</span></p>
-                    </div>
-                    <div class="title">
+                    <div class="title" id="buscarManifestacao">
                         <p class="pContent"><i class="search icon"></i>&nbsp;&nbsp;&nbsp;<span>Buscar Manifestação</span></p>
                     </div>
-                    <div class="content">
+                    <div class="content" id="buscarManifestacao">
                         <a class="item" href="inbox.html">Teste</a>
                         <a class="item" href="mail.html">Teste</a>
                         <a class="item" href="chat.html">Teste</a>
@@ -56,7 +46,7 @@ and open the template in the editor.
                     <div class="title" id="estatisticas">
                         <p class="pContent"><i class="chart area icon"></i>&nbsp;&nbsp;&nbsp;<span>Estatísticas</span></p>
                     </div>
-                    <div class="content">
+                    <div class="content" id="estatisticas">
                         <a class="item" href="inbox.html">Teste</a>
                         <a class="item" href="mail.html">Teste</a>
                         <a class="item" href="chat.html">Teste</a>
@@ -64,7 +54,7 @@ and open the template in the editor.
                     <div class="title" id="perguntasFrequentes">
                         <p class="pContent"><i class="question icon"></i>&nbsp;&nbsp;&nbsp;<span>Perguntas Frequentes</span></p>
                     </div>
-                    <div class="content">
+                    <div class="content" id="perguntasFrequentes">
                         <a class="item" href="inbox.html">Teste</a>
                         <a class="item" href="mail.html">Teste</a>
                         <a class="item" href="chat.html">Teste</a>
@@ -157,25 +147,25 @@ and open the template in the editor.
                 </div>
                 <div class="iconsSidebarFix">
                     <div class="ui dropdown item displaynone iconShort">
-                        <i class="home layout icon"></i>
+                        <i class="home layout icon" id="paginaInicial"></i>
                     </div>
                     <div class="ui dropdown item displaynone iconShort">
-                        <i class="arrow alternate circle left outline icon"></i>
+                        <i class="arrow alternate circle left outline icon" id="voltar"></i>
                     </div>
                     <div class="ui dropdown item displaynone iconShort">
-                        <i class="bullhorn icon active"></i>
+                        <i class="bullhorn icon active" id="abrirManifestacao"></i>
                     </div>
                     <div class="ui dropdown item displaynone iconShort">
-                        <i class="search icon"></i>
+                        <i class="search icon" id="buscarManifestacao"></i>
                     </div>
                     <div class="ui dropdown item displaynone iconShort">
-                        <i class="chart area icon"></i>
+                        <i class="chart area icon" id="estatisticas"></i>
                     </div>
                     <div class="ui dropdown item displaynone iconShort">
-                        <i class="question icon"></i>
+                        <i class="question icon" id="perguntasFrequentes"></i>
                     </div>
                     <div class="ui dropdown item displaynone iconShort">
-                        <i class="info icon"></i>
+                        <i class="info icon" id="outrosContatos"></i>
                     </div>
                 </div>
                 <!--                <div class="ui dropdown item displaynone">

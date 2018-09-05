@@ -114,21 +114,23 @@ $(document).ready(function () {
     }
 
 
-
-
-    $('.ui.accordion').accordion({
-        selector: {
-
-        }
-    });
-
     $(".ui.accordion .title").click(function () {
         var valorId = $(this).attr("id");
         $(".ui.accordion .title").each(function () {
             $(this).removeClass("active");
             $(this).removeClass("activeAccordion");
         });
+
+        $(".ui.accordion .content").each(function () {
+            $(this).hide(500);
+        });
+
+        $(".iconsSidebarFix .iconShort .icon").each(function () {
+            $(this).removeClass("active");
+        });
+        $(".ui.accordion .content#" + valorId).show(500);
         $(".title#" + valorId).addClass("activeAccordion");
+        $(".iconsSidebarFix .iconShort .icon#" + valorId).addClass("active");
     });
 
 });
