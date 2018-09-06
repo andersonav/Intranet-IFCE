@@ -279,6 +279,8 @@ i.icon.content {
 .divMae#notifications{
     right: 128px;
     width: 320px;
+    height: 29% !important;
+    overflow-y: auto;
 
 }
 .divMae#informationsUser{
@@ -300,6 +302,9 @@ i.icon.content {
     min-height: 100px;
     padding: 28px;
     padding-right: 21px;
+}
+.ui.comments{
+    margin: 6% !important;
 }
 .liGeral{
     display: inline-block;

@@ -116,21 +116,36 @@ $(document).ready(function () {
 
     $(".ui.accordion .title").click(function () {
         var valorId = $(this).attr("id");
-        $(".ui.accordion .title").each(function () {
-            $(this).removeClass("active");
-            $(this).removeClass("activeAccordion");
-        });
-
+        clearClassActive(".ui.accordion .title", "active");
+        clearClassActive(".ui.accordion .title", "activeAccordion");
+        clearClassActive(".ui.accordion .content", "active");
+        clearClassActive(".iconsSidebarFix .iconShort .icon", "active");
         $(".ui.accordion .content").each(function () {
             $(this).hide(500);
         });
-
-        $(".iconsSidebarFix .iconShort .icon").each(function () {
-            $(this).removeClass("active");
-        });
         $(".ui.accordion .content#" + valorId).show(500);
-        $(".title#" + valorId).addClass("activeAccordion");
-        $(".iconsSidebarFix .iconShort .icon#" + valorId).addClass("active");
+        addClassActive(".title", valorId, "activeAccordion");
+        addClassActive(".iconsSidebarFix .iconShort .icon", valorId, "active");
     });
+
+    $(".iconsSidebarFix .iconShort .icon").click(function () {
+        var valorId = $(this).attr("id");
+        clearClassActive(".ui.accordion .title", "active");
+        clearClassActive(".ui.accordion .title", "activeAccordion");
+        clearClassActive(".iconsSidebarFix .iconShort .icon", "active");
+        addClassActive(".title", valorId, "activeAccordion");
+        addClassActive(".iconsSidebarFix .iconShort .icon", valorId, "active");
+
+    });
+
+    function clearClassActive(elemento, valorClass) {
+        $(elemento).each(function () {
+            $(this).removeClass(valorClass);
+        });
+    }
+
+    function addClassActive(elemento, valorId, valorClass) {
+        $(elemento + "#" + valorId).addClass(valorClass);
+    }
 
 });
