@@ -551,6 +551,28 @@ i.icon.content {
     #iconsAndInformationsUser {
         margin-right: 18px !important;
     }
+    .divMae#system{
+        right: 18px;
+    }
+    .divMae#notifications{
+        right: 18px;
+    }
+    .divMae#informationsUser{
+        right: 18px;
+    }
+
+    .iconsAccount .arrow#system {
+        right: 145px;
+    }
+
+    .iconsAccount .arrow#notifications {
+        right: 91px;
+    }
+
+    .iconsAccount .arrow#informationsUser {
+        right: 29px;
+        top: 36px;
+    }
 }
 
 /* Tablet / iPad Portrait */
@@ -573,6 +595,28 @@ i.icon.content {
     #iconsAndInformationsUser {
         margin-right: 18px !important;
     }
+    .divMae#system{
+        right: 18px;
+    }
+    .divMae#notifications{
+        right: 18px;
+    }
+    .divMae#informationsUser{
+        right: 18px;
+    }
+
+    .iconsAccount .arrow#system {
+        right: 145px;
+    }
+
+    .iconsAccount .arrow#notifications {
+        right: 91px;
+    }
+
+    .iconsAccount .arrow#informationsUser {
+        right: 29px;
+        top: 36px;
+    }
 }
 
 /* Computer / Desktop / iPad Landscape */
@@ -590,33 +634,31 @@ i.icon.content {
         width: 82.5% !important;
         margin-left: 96px !important;
     }
-    .divMae#informationsUser {
-        right: 28px;
+    .ui.container.fluid{
+        margin-left: auto !important; 
+        margin-right: auto !important; 
     }
-    .iconsAccount .arrow#informationsUser {
-        right: 37px;
-
+    .divMae#system{
+        right: 18px;
     }
-
     .divMae#notifications{
-        right: 27px;
+        right: 18px;
+    }
+    .divMae#informationsUser{
+        right: 18px;
+    }
+
+    .iconsAccount .arrow#system {
+        right: 153px;
     }
 
     .iconsAccount .arrow#notifications {
         right: 99px;
     }
 
-    .divMae#system {
-        right: 27px;
-    }
-
-    .iconsAccount .arrow#system {
-        right: 154px;
-    }
-
-    .ui.container.fluid{
-        margin-left: auto !important; 
-        margin-right: auto !important; 
+    .iconsAccount .arrow#informationsUser {
+        right: 36px;
+        top: 36px;
     }
 
 }
@@ -642,6 +684,29 @@ i.icon.content {
     .ui.container.fluid{
         margin-left: auto !important; 
         margin-right: auto !important; 
+    }
+
+    .divMae#system{
+        right: 18px;
+    }
+    .divMae#notifications{
+        right: 18px;
+    }
+    .divMae#informationsUser{
+        right: 18px;
+    }
+
+    .iconsAccount .arrow#system {
+        right: 153px;
+    }
+
+    .iconsAccount .arrow#notifications {
+        right: 99px;
+    }
+
+    .iconsAccount .arrow#informationsUser {
+        right: 36px;
+        top: 36px;
     }
 }
 
