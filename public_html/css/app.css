@@ -24,6 +24,10 @@ i.icon.content {
 .displayblock {
     display: block !important;
 }
+.ui.left.visible.sidebar,.ui.right.visible.sidebar{
+    -webkit-box-shadow: 0 0 0px rgba(255,255,255,0) !important; 
+    box-shadow: 0 0 0px rgba(255,255,255,0) !important;
+}
 #sibebarMaior{
     width: 16%;
 }
@@ -73,6 +77,8 @@ i.icon.content {
     height: 38px !important;
     line-height: 1.5;
     margin-left: -5px !important;
+    margin-top: -10px !important;
+    margin-bottom: -9px !important;
 }
 
 .ui.inverted.menu .dropdown.item:hover, .ui.inverted.menu .link.item:hover, .ui.inverted.menu a.item:hover, .ui.link.inverted.menu .item:hover {
@@ -118,6 +124,9 @@ i.icon.content {
     color: white !important;
     text-align: justify;
     margin-bottom: 10px !important;
+}
+.ui.accordion .content a{
+    margin-left: 10% !important;
 }
 .title p{
     margin-left: 15px;
@@ -712,5 +721,47 @@ i.icon.content {
 
 /* Widescreen Monitor */
 @media only screen and (min-width: 1920px) {
+    #sibebarMaior{
+        width: 10%;
+    }
 
+    .ui.container.containerPrincipal{
+        width: 82.5% !important;
+    }
+
+    .teste {
+        margin-left: 153px;
+    }
+
+    #iconsAndInformationsUser {
+        margin-right: 27px !important;
+    }
+
+    .ui.container.fluid{
+        margin-left: auto !important; 
+        margin-right: auto !important; 
+    }
+
+    .divMae#system{
+        right: 18px;
+    }
+    .divMae#notifications{
+        right: 18px;
+    }
+    .divMae#informationsUser{
+        right: 18px;
+    }
+
+    .iconsAccount .arrow#system {
+        right: 153px;
+    }
+
+    .iconsAccount .arrow#notifications {
+        right: 99px;
+    }
+
+    .iconsAccount .arrow#informationsUser {
+        right: 36px;
+        top: 36px;
+    }
 }

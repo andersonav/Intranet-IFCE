@@ -120,10 +120,8 @@ $(document).ready(function () {
         clearClassActive(".ui.accordion .title", "activeAccordion");
         clearClassActive(".ui.accordion .content", "active");
         clearClassActive(".iconsSidebarFix .iconShort .icon", "active");
-        $(".ui.accordion .content").each(function () {
-            $(this).hide(500);
-        });
-        $(".ui.accordion .content#" + valorId).show(500);
+        hideElement(valorId);
+        showElement(".ui.accordion .content", valorId);
         addClassActive(".title", valorId, "activeAccordion");
         addClassActive(".iconsSidebarFix .iconShort .icon", valorId, "active");
     });
@@ -133,6 +131,8 @@ $(document).ready(function () {
         clearClassActive(".ui.accordion .title", "active");
         clearClassActive(".ui.accordion .title", "activeAccordion");
         clearClassActive(".iconsSidebarFix .iconShort .icon", "active");
+        hideElement(valorId);
+        showElement(".ui.accordion .content", valorId);
         addClassActive(".title", valorId, "activeAccordion");
         addClassActive(".iconsSidebarFix .iconShort .icon", valorId, "active");
 
@@ -146,6 +146,18 @@ $(document).ready(function () {
 
     function addClassActive(elemento, valorId, valorClass) {
         $(elemento + "#" + valorId).addClass(valorClass);
+    }
+
+    function hideElement(valorId) {
+        $(".ui.accordion .content").each(function () {
+            if ($(this).attr("id") != valorId) {
+                $(this).hide(500);
+            }
+        });
+    }
+
+    function showElement(elemento, valorId) {
+        $(elemento + "#" + valorId).show(500);
     }
 
 });

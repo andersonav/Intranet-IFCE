@@ -5,6 +5,7 @@
         <group>
             <file>file:/var/www/html/InicialIntranet/public_html/index.html</file>
             <file>file:/var/www/html/InicialIntranet/public_html/js/app.js</file>
+            <file>file:/var/www/html/InicialIntranet/public_html/js/appUsers.js</file>
             <file>file:/var/www/html/InicialIntranet/public_html/css/app.css</file>
         </group>
     </open-files>
