@@ -124,7 +124,7 @@ $(document).ready(function () {
                 $(this).hide(500);
             }
         });
-        $(".ui.accordion .content#" + valorId).show(500);
+        showElement(".ui.accordion .content", valorId);
 //        addClassActive(".title", valorId, "activeAccordion");
 //        addClassActive(".iconsSidebarFix .iconShort .icon", valorId, "active");
     });
@@ -139,7 +139,7 @@ $(document).ready(function () {
                 $(this).hide(500);
             }
         });
-        $(".ui.accordion .content#" + valorId).show(500);
+        showElement(".ui.accordion .content", valorId);
 //        addClassActive(".title", valorId, "activeAccordion");
 //        addClassActive(".iconsSidebarFix .iconShort .icon", valorId, "active");
 
@@ -153,6 +153,10 @@ $(document).ready(function () {
 
     function addClassActive(elemento, valorId, valorClass) {
         $(elemento + "#" + valorId).addClass(valorClass);
+    }
+
+    function showElement(elemento, valorId) {
+        $(elemento + "#" + valorId).show(500);
     }
 
 
