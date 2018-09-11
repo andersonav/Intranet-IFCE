@@ -14,12 +14,13 @@ $(document).ready(function () {
 
 
     $(window).resize(function () {
+        location.reload();
 
-        if ($(window).width() >= 200 && $(window).width() <= 549) {
-
-        } else {
-            $("#sibebarMaior").addClass("visible");
-        }
+//        if ($(window).width() >= 200 && $(window).width() <= 549) {
+//
+//        } else {
+//            $("#sibebarMaior").addClass("visible");
+//        }
     });
 
     if ($(window).width() >= 200 && $(window).width() <= 549) {

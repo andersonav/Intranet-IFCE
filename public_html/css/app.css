@@ -29,7 +29,7 @@ i.icon.content {
     box-shadow: 0 0 0px rgba(255,255,255,0) !important;
 }
 #sibebarMaior{
-    width: 16%;
+    width: 17%;
 }
 
 .sibebarToMenor {
@@ -288,7 +288,7 @@ i.icon.content {
     -webkit-user-select: text;
     z-index: 99 !important;
     height: auto !important;
-    top: 56px;
+    top: 62px;
 }
 .divMae#system{
     right: 162px;
@@ -360,7 +360,7 @@ i.icon.content {
     border-width: 10px;
     display: block;
     height: 0;
-    top: 36px;
+    top: 42px;
     position: absolute;
     border-bottom-color: white;
     border-style: dashed dashed solid;
@@ -376,7 +376,7 @@ i.icon.content {
 
 .iconsAccount .arrow#informationsUser {
     right: 80px;
-    top: 36px;
+    top: 42px;
 }
 .ui.segment.header{
     margin-top: -.14285714em !important;
@@ -386,25 +386,25 @@ i.icon.content {
 }
 @media only screen and (min-width: 500px) and (max-width: 549px) {
     #sibebarMaior{
-        width: 50%;
+        width: 52%;
     }
 }
 
 @media only screen and (min-width: 450px) and (max-width: 499px) {
     #sibebarMaior{
-        width: 55%;
+        width: 57%;
     }
 }
 
 @media only screen and (min-width: 350px) and (max-width: 449px) {
     #sibebarMaior{
-        width: 68%;
+        width: 70%;
     }
 }
 
 @media only screen and (min-width: 200px) and (max-width: 349px) {
     #sibebarMaior{
-        width: 80%;
+        width: 82%;
     }
 }
 
@@ -449,13 +449,13 @@ i.icon.content {
 
     .iconsAccount .arrow#informationsUser {
         right: 29px;
-        top: 36px;
+        top: 42px;
     }
 }
 
 @media only screen and (min-width: 550px) and (max-width: 717px) {
     #sibebarMaior{
-        width: 40%;
+        width: 42%;
     }
     .ui.container.fluid{
         margin-left: auto !important; 
@@ -502,13 +502,13 @@ i.icon.content {
 
     .iconsAccount .arrow#informationsUser {
         right: 29px;
-        top: 36px;
+        top: 42px;
     }
 }
 
 @media only screen and (min-width: 718px) and (max-width: 849px) {
     #sibebarMaior{
-        width: 34%;
+        width: 36%;
     }
     .ui.container.fluid{
         margin-left: auto !important; 
@@ -546,13 +546,13 @@ i.icon.content {
 
     .iconsAccount .arrow#informationsUser {
         right: 29px;
-        top: 36px;
+        top: 42px;
     }
 }
 
 @media only screen and (min-width: 850px) and (max-width: 910px) {
     #sibebarMaior{
-        width: 28%;
+        width: 30%;
     }
     .ui.container.fluid{
         margin-left: auto important; 
@@ -589,14 +589,14 @@ i.icon.content {
 
     .iconsAccount .arrow#informationsUser {
         right: 29px;
-        top: 36px;
+        top: 42px;
     }
 }
 
 /* Tablet / iPad Portrait */
 @media only screen and (min-width: 909px) and (max-width: 991px) {
     #sibebarMaior{
-        width: 27%;
+        width: 29%;
     }
     .ui.container.fluid{
         margin-left: auto !important; 
@@ -633,14 +633,14 @@ i.icon.content {
 
     .iconsAccount .arrow#informationsUser {
         right: 29px;
-        top: 36px;
+        top: 42px;
     }
 }
 
 /* Computer / Desktop / iPad Landscape */
 @media only screen and (min-width: 992px) and (max-width: 1329px) {
     #sibebarMaior{
-        width: 26%;
+        width: 28%;
     }
     #iconsAndInformationsUser {
         margin-right: 27px !important;
@@ -676,7 +676,7 @@ i.icon.content {
 
     .iconsAccount .arrow#informationsUser {
         right: 36px;
-        top: 36px;
+        top: 42px;
     }
 
 }
@@ -684,7 +684,7 @@ i.icon.content {
 /* Large Monitor */
 @media only screen and (min-width: 1329px) and (max-width: 1523px) {
     #sibebarMaior{
-        width: 20%;
+        width: 22%;
     }
 
     .ui.container.containerPrincipal{
@@ -724,7 +724,7 @@ i.icon.content {
 
     .iconsAccount .arrow#informationsUser {
         right: 36px;
-        top: 36px;
+        top: 42px;
     }
 }
 
@@ -766,6 +766,6 @@ i.icon.content {
 
     .iconsAccount .arrow#informationsUser {
         right: 36px;
-        top: 36px;
+        top: 42px;
     }
 }
