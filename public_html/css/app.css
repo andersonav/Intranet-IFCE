@@ -81,16 +81,20 @@ i.icon.content {
     margin-bottom: -9px !important;
 }
 
+.ui.vertical.menu .active.item{
+    width: 100% !important;
+}
+
 .ui.inverted.menu .dropdown.item:hover, .ui.inverted.menu .link.item:hover, .ui.inverted.menu a.item:hover, .ui.link.inverted.menu .item:hover {
     background: none !important; 
     color: #fff;
 }
 .ui.link.menu .item:hover, .ui.menu .dropdown.item:hover, .ui.menu .link.item:hover, .ui.menu a.item:hover {
-    background: none !important;
+    /*background: none !important;*/
 
 }
 .ui.vertical.menu .active.item:hover {
-    background-color: white !important;
+    /*background-color: white !important;*/
 }
 
 .dropdown .menu .header {
@@ -119,6 +123,11 @@ i.icon.content {
 .ui.accordion span{
     font-size: 17px !important;
 }
+.ui.accordion span i{
+    font-size: 18px !important;
+    margin-left: 5% !important;
+    float: right;
+}
 
 .ui.accordion .title:not(.ui) {
     color: white !important;
@@ -126,7 +135,7 @@ i.icon.content {
     margin-bottom: 10px !important;
 }
 .ui.accordion .content a{
-    margin-left: 10% !important;
+   padding-left: 23%;
 }
 .title p{
     margin-left: 15px;
@@ -150,7 +159,7 @@ i.icon.content {
     color:white;
 }
 .pContent span {
-    margin-left: 13px !important;
+    margin-left: 8% !important;
 }
 
 .title p {
@@ -160,7 +169,7 @@ i.icon.content {
     border-left-style: solid !important;
     border-left-color: #34483F !important;
     border-left-width: thick !important;
-    width: 96% !important;
+    width: 99% !important;
     border-bottom-right-radius: 14px !important;
     border-top-right-radius: 14px !important;
     color: #000000a6 !important;
@@ -721,13 +730,8 @@ i.icon.content {
 
 /* Widescreen Monitor */
 @media only screen and (min-width: 1920px) {
-    #sibebarMaior{
-        width: 10%;
-    }
 
-    .ui.container.containerPrincipal{
-        width: 82.5% !important;
-    }
+   
 
     .teste {
         margin-left: 153px;

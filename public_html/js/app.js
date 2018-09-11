@@ -10,6 +10,9 @@ $(document).ready(function () {
     $('.checkbox').checkbox();
     $('select').dropdown();
 
+
+
+
     $(window).resize(function () {
 
         if ($(window).width() >= 200 && $(window).width() <= 549) {
@@ -159,5 +162,11 @@ $(document).ready(function () {
     function showElement(elemento, valorId) {
         $(elemento + "#" + valorId).show(500);
     }
+
+    $(".ui.accordion .title").each(function () {
+        if ($(this).hasClass("activeAccordion")) {
+            $(this).trigger("click");
+        }
+    });
 
 });
