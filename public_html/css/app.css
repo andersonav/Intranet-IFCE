@@ -54,10 +54,12 @@ i.icon.content {
 }
 
 .logo img {
-    margin-top: -11px !important;
-    width: 81.5% !important;
-    float: right !important;
-    height: 61px;
+    margin-top: -12px !important;
+    float: left;
+    height: 61px !important;
+    width: 79% !important;
+    margin-left: 20px !important;
+    max-width: 70% !important;
 }
 
 .title.item {
@@ -135,7 +137,7 @@ i.icon.content {
     margin-bottom: 10px !important;
 }
 .ui.accordion .content a{
-   padding-left: 23%;
+    padding-left: 23%;
 }
 .title p{
     margin-left: 15px;
@@ -392,19 +394,19 @@ i.icon.content {
 
 @media only screen and (min-width: 450px) and (max-width: 499px) {
     #sibebarMaior{
-        width: 57%;
+        width: 63%;
     }
 }
 
 @media only screen and (min-width: 350px) and (max-width: 449px) {
     #sibebarMaior{
-        width: 70%;
+        width: 77%;
     }
 }
 
 @media only screen and (min-width: 200px) and (max-width: 349px) {
     #sibebarMaior{
-        width: 82%;
+        width: 90%;
     }
 }
 
@@ -455,7 +457,7 @@ i.icon.content {
 
 @media only screen and (min-width: 550px) and (max-width: 717px) {
     #sibebarMaior{
-        width: 42%;
+        width: 48%;
     }
     .ui.container.fluid{
         margin-left: auto !important; 
@@ -552,7 +554,7 @@ i.icon.content {
 
 @media only screen and (min-width: 850px) and (max-width: 910px) {
     #sibebarMaior{
-        width: 30%;
+        width: 36%;
     }
     .ui.container.fluid{
         margin-left: auto important; 
@@ -562,8 +564,8 @@ i.icon.content {
         margin-left: 166px;
     }
     .ui.container.containerPrincipal{
-        width: 82.5% !important;
-        margin-left: 96px !important;
+        width: 70% !important;
+        margin-left: 164px !important;
     }
 
     #iconsAndInformationsUser {
@@ -646,7 +648,7 @@ i.icon.content {
         margin-right: 27px !important;
     }
     .teste {
-        margin-left: 246px;
+        margin-left: 314px;
     }
     .ui.container.containerPrincipal{
         width: 82.5% !important;
@@ -731,7 +733,7 @@ i.icon.content {
 /* Widescreen Monitor */
 @media only screen and (min-width: 1920px) {
 
-   
+
 
     .teste {
         margin-left: 153px;

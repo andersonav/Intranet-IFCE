@@ -14,7 +14,7 @@ $(document).ready(function () {
 
 
     $(window).resize(function () {
-        location.reload();
+        //=location.reload();
 
 //        if ($(window).width() >= 200 && $(window).width() <= 549) {
 //
@@ -44,7 +44,6 @@ $(document).ready(function () {
             $(".teste").toggleClass(aux);
             $("#sibebarMaior").toggleClass("sibebarToMenor");
             $(".logo").find('img').toggle();
-
         });
     }
 
@@ -107,13 +106,13 @@ $(document).ready(function () {
 
     function auxWidthScreenSidebar() {
         if ($(window).width() >= 500 && $(window).width() <= 549) {
-            aux = "50";
+            aux = "52";
         } else if ($(window).width() >= 450 && $(window).width() <= 499) {
-            aux = "55";
+            aux = "63";
         } else if ($(window).width() >= 350 && $(window).width() <= 449) {
-            aux = "68";
+            aux = "77";
         } else if ($(window).width() >= 200 && $(window).width() <= 349) {
-            aux = "80";
+            aux = "85";
         }
     }
 
