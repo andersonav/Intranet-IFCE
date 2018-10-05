@@ -1,3 +1,13 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13/09/2018, 16:03:50
+    Author     : andersonalves
+*/
+
 /*.openbtn{
     margin-left: -12px !important;
     margin-top: -20px !important;
@@ -53,13 +63,20 @@ i.icon.content {
     float: left !important;
 }
 
+.gb_ac i {
+    cursor: pointer !important;
+    color:white !important;
+    margin-left: 15px !important;
+    float: left !important;
+}
+
 .logo img {
     margin-top: -12px !important;
     float: left;
     height: 61px !important;
-    width: 79% !important;
+    width: 88% !important;
     margin-left: 20px !important;
-    max-width: 70% !important;
+    max-width: 76% !important;
 }
 
 .title.item {
@@ -110,34 +127,42 @@ i.icon.content {
 .iconsSidebarFix{
     margin-top: 35px;
 }
-.ui.accordion a {
-    color:white !important;
+
+.ui.accordion#accordionSidebar a.item.active{
+    color:gold !important;
 }
-.ui.accordion{
+
+.ui.accordion#accordionSidebar a {
+    color:white;
+}
+.ui.accordion#accordionSidebar{
     font-size: 15px;
     color: white !important;
     margin-top: 40px;
 }
 
-.ui.accordion i{
+.ui.accordion#accordionSidebar i{
     font-size: 23px !important;
 }
-.ui.accordion span{
+.ui.accordion#accordionSidebar span{
     font-size: 17px !important;
 }
-.ui.accordion span i{
+.ui.accordion#accordionSidebar span i{
     font-size: 18px !important;
     margin-left: 5% !important;
     float: right;
 }
 
-.ui.accordion .title:not(.ui) {
+.ui.accordion#accordionSidebar .title:not(.ui) {
     color: white !important;
     text-align: justify;
     margin-bottom: 10px !important;
 }
-.ui.accordion .content a{
-    padding-left: 23%;
+.ui.accordion#accordionSidebar .title:not(.ui).activeAccordion span {
+    margin-left: 6% !important;
+}
+.ui.accordion#accordionSidebar .content a{
+    padding-left: 26%;
 }
 .title p{
     margin-left: 15px;
@@ -157,6 +182,9 @@ i.icon.content {
     background-color: #34483F !important;
     height: 67px;
 }
+.ui.vertical.menu .active.item{
+    background: transparent !important;
+}
 .pusher a{
     color:white;
 }
@@ -166,7 +194,7 @@ i.icon.content {
 
 .title p {
 }
-.ui.accordion .title:not(.ui).activeAccordion {
+.ui.accordion#accordionSidebar .title:not(.ui).activeAccordion {
     background: white !important;
     border-left-style: solid !important;
     border-left-color: #34483F !important;
@@ -197,7 +225,7 @@ i.icon.content {
 }
 #containerToInformations h1{
     color:#006D44 !important;
-    text-align: center;
+    /*text-align: center;*/
 }
 #containerToInformations h2{
     color: rgba(0,0,0,.70) !important;
@@ -294,17 +322,20 @@ i.icon.content {
 }
 .divMae#system{
     right: 162px;
+    z-index: 999 !important;
 
 }
 .divMae#notifications{
     right: 128px;
     width: 320px;
+    z-index: 999 !important;
     height: 29% !important;
     overflow-y: auto;
 
 }
 .divMae#informationsUser{
     right: 64px;
+    z-index: 999 !important;
 }
 .ulGeral{
     margin: 0 auto;
@@ -464,12 +495,12 @@ i.icon.content {
         margin-right: auto !important; 
     }
     .teste{
-        margin-left: 42%;
+        margin-left: 49%;
     }
     .ui.container.containerPrincipal{
         margin:20px;
         z-index: 100;
-        width: 94% !important;
+        width: 92% !important;
         margin-left: 0px !important;
     }
     #iconsAndInformationsUser {
@@ -478,7 +509,7 @@ i.icon.content {
     .ui.accordion i {
         font-size: 17px !important;
     }
-    .ui.accordion span {
+    .ui.accordion#accordionSidebar span {
         font-size: 16px !important;
     }
     .title p {
@@ -605,7 +636,7 @@ i.icon.content {
         margin-right: auto !important; 
     }
     .teste {
-        margin-left: 166px;
+        margin-left: 204px;
     }
     .ui.container.containerPrincipal{
         width: 82.5% !important;
@@ -648,7 +679,7 @@ i.icon.content {
         margin-right: 27px !important;
     }
     .teste {
-        margin-left: 314px;
+        margin-left: 284px;
     }
     .ui.container.containerPrincipal{
         width: 82.5% !important;
@@ -694,7 +725,7 @@ i.icon.content {
     }
 
     .teste {
-        margin-left: 153px;
+        margin-left: 197px;
     }
 
     #iconsAndInformationsUser {
@@ -770,4 +801,26 @@ i.icon.content {
         right: 36px;
         top: 42px;
     }
+}
+
+.gb_ac{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 66px;
+}
+
+.gb_bc {
+    line-height: normal;
+    position: relative;
+    padding-left: 21px;
+}
+
+.gb_me{
+    outline: none;
 }

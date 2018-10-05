@@ -78,6 +78,8 @@ $(document).ready(function () {
         }
     });
 
+
+
     function auxIndiceArray(valorId, valorInteiro) {
         if (valorId == "system") {
             indiceId[valorId] = valorInteiro;
@@ -127,6 +129,8 @@ $(document).ready(function () {
         showElement(".ui.accordion .content", valorId);
         addClassActive(".title", valorId, "activeAccordion");
         addClassActive(".iconsSidebarFix .iconShort .icon", valorId, "active");
+        logicIconsDropdown(valorId);
+
     });
 
     $(".iconsSidebarFix .iconShort .icon").click(function () {
@@ -138,13 +142,27 @@ $(document).ready(function () {
         showElement(".ui.accordion .content", valorId);
         addClassActive(".title", valorId, "activeAccordion");
         addClassActive(".iconsSidebarFix .iconShort .icon", valorId, "active");
-
+        logicIconsDropdown(valorId);
     });
 
     function clearClassActive(elemento, valorClass) {
         $(elemento).each(function () {
             $(this).removeClass(valorClass);
         });
+    }
+
+    function eachAdicionarClasse(elemento, valorClass) {
+        $(elemento).each(function () {
+            $(this).addClass(valorClass);
+        });
+    }
+
+    function removeClassElement(elemento, valorClass) {
+        $(elemento).removeClass(valorClass);
+    }
+
+    function addClassElement(elemento, valorClass) {
+        $(elemento).addClass(valorClass);
     }
 
     function addClassActive(elemento, valorId, valorClass) {
@@ -163,9 +181,42 @@ $(document).ready(function () {
         $(elemento + "#" + valorId).show(500);
     }
 
+    function logicIconsDropdown(valorId) {
+        clearClassActive(".title span i", "caret");
+        clearClassActive(".title span i", "down");
+        clearClassActive(".title span i", "icon");
+        eachAdicionarClasse(".title span i", "dropdown");
+        eachAdicionarClasse(".title span i", "icon");
+
+        var elemento = ".title.activeAccordion#" + valorId + " span i#" + valorId;
+        removeClassElement(elemento, "dropdown");
+        removeClassElement(elemento, "icon");
+
+        addClassElement(elemento, "caret");
+        addClassElement(elemento, "down");
+        addClassElement(elemento, "icon");
+    }
+
     $(".ui.accordion .title").each(function () {
         if ($(this).hasClass("activeAccordion")) {
             $(this).trigger("click");
+        }
+    });
+
+    $("body").click(function (e) {
+        if ($(e.target).hasClass("openDivNone")) {
+
+        } else {
+            console.log("Diferente");
+            $(".divMae").each(function () {
+                $(this).removeClass("displayblock");
+                $(this).addClass("displaynone");
+            });
+
+            $("#iconsAndInformationsUser .arrow").each(function () {
+                $(this).removeClass("displayblock");
+                $(this).addClass("displaynone");
+            });
         }
     });
 
