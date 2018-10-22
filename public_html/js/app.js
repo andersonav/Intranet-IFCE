@@ -202,7 +202,7 @@ $(document).ready(function () {
             $(this).trigger("click");
         }
     });
-
+    
     $("body").click(function (e) {
         if ($(e.target).hasClass("openDivNone")) {
 

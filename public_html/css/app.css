@@ -70,6 +70,10 @@ i.icon.content {
     float: left !important;
 }
 
+.ui.card, .ui.cards>.card#cardUser {
+    -webkit-box-shadow: none !important;
+}
+
 .logo img {
     margin-top: -12px !important;
     float: left;
