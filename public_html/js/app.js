@@ -4,11 +4,19 @@
  * and open the template in the editor.
  */
 
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
 $(document).ready(function () {
     var indiceId = {"system": 0, "notifications": 0, "informationsUser": 0};
     $('.menu .item').tab();
     $('.checkbox').checkbox();
     $('select').dropdown();
+    $(".carregando").removeClass('active');//loader
 
 
 
@@ -78,8 +86,6 @@ $(document).ready(function () {
         }
     });
 
-
-
     function auxIndiceArray(valorId, valorInteiro) {
         if (valorId == "system") {
             indiceId[valorId] = valorInteiro;
@@ -118,30 +124,54 @@ $(document).ready(function () {
         }
     }
 
-
-    $(".ui.accordion .title").click(function () {
+    $(".ui.accordion#accordionSidebar .title").click(function () {
         var valorId = $(this).attr("id");
-        clearClassActive(".ui.accordion .title", "active");
-        clearClassActive(".ui.accordion .title", "activeAccordion");
-        clearClassActive(".ui.accordion .content", "active");
-        clearClassActive(".iconsSidebarFix .iconShort .icon", "active");
-        hideElement(valorId);
-        showElement(".ui.accordion .content", valorId);
-        addClassActive(".title", valorId, "activeAccordion");
-        addClassActive(".iconsSidebarFix .iconShort .icon", valorId, "active");
-        logicIconsDropdown(valorId);
+        if ($(this).hasClass('activeAccordion')) {
+            if ($("#accordionSidebar .content#" + valorId).attr("id") != null) {
+                $(this).removeClass('activeAccordion');
+                clearClassActive(".ui.accordion#accordionSidebar .content", "active");
+                clearClassActive(".iconsSidebarFix .iconShort .icon", "active");
+                $(".ui.accordion#accordionSidebar .content#" + valorId).hide(500);
+            }
+        } else {
+            clearClassActive(".ui.accordion#accordionSidebar .title", "active");
+            clearClassActive(".ui.accordion#accordionSidebar .title", "activeAccordion");
+            clearClassActive(".ui.accordion#accordionSidebar .content", "active");
+            clearClassActive(".iconsSidebarFix .iconShort .icon", "active");
+            hideElement(valorId);
+            showElement(".ui.accordion#accordionSidebar .content", valorId);
+            addClassActive("#accordionSidebar .title", valorId, "activeAccordion");
+            addClassActive(".iconsSidebarFix .iconShort .icon", valorId, "active");
+            $("#accordionSidebar .content .item").each(function () {
+                $(this).css("color", "white");
+            });
+            if ($("#accordionSidebar .content#" + valorId).attr("id") != null) {
+                functionAjaxToLoadPageToContent(valorId);
+            } else {
+                functionAjaxToLoadPage(valorId);
 
+            }
+        }
+        logicIconsDropdown(valorId);
     });
 
     $(".iconsSidebarFix .iconShort .icon").click(function () {
         var valorId = $(this).attr("id");
-        clearClassActive(".ui.accordion .title", "active");
-        clearClassActive(".ui.accordion .title", "activeAccordion");
+        clearClassActive(".ui.accordion#accordionSidebar .title", "active");
+        clearClassActive(".ui.accordion#accordionSidebar .title", "activeAccordion");
         clearClassActive(".iconsSidebarFix .iconShort .icon", "active");
         hideElement(valorId);
-        showElement(".ui.accordion .content", valorId);
+        showElement(".ui.accordion#accordionSidebar .content", valorId);
         addClassActive(".title", valorId, "activeAccordion");
         addClassActive(".iconsSidebarFix .iconShort .icon", valorId, "active");
+        $(".ui.accordion#accordionSidebar .content .item").each(function () {
+            $(this).css("color", "white");
+        });
+        if ($(".ui.accordion#accordionSidebar .content#" + valorId).attr("id") != null) {
+            functionAjaxToLoadPageToContent(valorId);
+        } else {
+            functionAjaxToLoadPage(valorId);
+        }
         logicIconsDropdown(valorId);
     });
 
@@ -170,7 +200,7 @@ $(document).ready(function () {
     }
 
     function hideElement(valorId) {
-        $(".ui.accordion .content").each(function () {
+        $(".ui.accordion#accordionSidebar .content").each(function () {
             if ($(this).attr("id") != valorId) {
                 $(this).hide(500);
             }
@@ -182,13 +212,13 @@ $(document).ready(function () {
     }
 
     function logicIconsDropdown(valorId) {
-        clearClassActive(".title span i", "caret");
-        clearClassActive(".title span i", "down");
-        clearClassActive(".title span i", "icon");
-        eachAdicionarClasse(".title span i", "dropdown");
-        eachAdicionarClasse(".title span i", "icon");
+        clearClassActive("#accordionSidebar .title span i", "caret");
+        clearClassActive("#accordionSidebar .title span i", "down");
+        clearClassActive("#accordionSidebar .title span i", "icon");
+        eachAdicionarClasse("#accordionSidebar .title span i", "dropdown");
+        eachAdicionarClasse("#accordionSidebar .title span i", "icon");
 
-        var elemento = ".title.activeAccordion#" + valorId + " span i#" + valorId;
+        var elemento = "#accordionSidebar .title.activeAccordion#" + valorId + " span i#" + valorId;
         removeClassElement(elemento, "dropdown");
         removeClassElement(elemento, "icon");
 
@@ -197,17 +227,47 @@ $(document).ready(function () {
         addClassElement(elemento, "icon");
     }
 
-    $(".ui.accordion .title").each(function () {
+    function functionAjaxToLoadPageToContent(valorId) {
+        $("#accordionSidebar .content#" + valorId + " .item").click(function () {
+            var valorIdToA = $(this).attr("id");
+            $("#accordionSidebar .content#" + valorId + " .item").each(function () {
+                $(this).css("color", "white");
+            });
+            $("#accordionSidebar .content#" + valorId + " .item#" + valorIdToA).css("color", "gold");
+            $.ajax({
+                url: valorId + "/" + valorIdToA,
+                type: 'POST',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }, success: function (data, textStatus, jqXHR) {
+                    $("#containerToInformations").html(data);
+                }
+            });
+        });
+    }
+
+    function functionAjaxToLoadPage(valorId) {
+        $.ajax({
+            url: "/" + valorId,
+            type: 'POST',
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }, success: function (data, textStatus, jqXHR) {
+                $("#containerToInformations").html(data);
+            }
+        });
+    }
+
+    $(".ui.accordion#accordionSidebar .title").each(function () {
         if ($(this).hasClass("activeAccordion")) {
             $(this).trigger("click");
         }
     });
-    
+
     $("body").click(function (e) {
         if ($(e.target).hasClass("openDivNone")) {
 
         } else {
-            console.log("Diferente");
             $(".divMae").each(function () {
                 $(this).removeClass("displayblock");
                 $(this).addClass("displaynone");
